@@ -133,12 +133,12 @@ class FullDescriptionPage extends StatelessWidget {
                   Center(
                     child: GestureDetector(
                       onTap: () {
-                        // Handle button tap
+                        
                       },
                       child: Container(
                         width: MediaQuery.of(context).size.width * 0.8,
                         height: 50,
-                        margin: EdgeInsets.only(top: 20), // Adjust margin as needed
+                        margin: EdgeInsets.only(top: 20), 
                         decoration: BoxDecoration(
                           color: Color(0xFF277CE7),
                           borderRadius: BorderRadius.circular(25),
@@ -178,19 +178,19 @@ class FullDescriptionPage extends StatelessWidget {
             label: 'Profile',
           ),
         ],
-        currentIndex: 2, // Set the initial selected index to match the profile tab
+        currentIndex: 2, 
         selectedItemColor: Colors.blue,
         unselectedItemColor: Colors.grey,
         onTap: (index) {
           switch (index) {
             case 0:
-              Navigator.pushNamed(context, '/home'); // Navigate to home page
+              Navigator.pushNamed(context, '/home'); 
               break;
             case 1:
               Navigator.pushNamed(context, '/message');
               break;
             case 2:
-              Navigator.pushNamed(context, '/profile'); // Navigate to profile page
+              Navigator.pushNamed(context, '/profile'); 
               break;
           }
         },
