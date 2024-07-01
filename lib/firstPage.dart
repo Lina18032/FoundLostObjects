@@ -99,7 +99,7 @@ class Firstpage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 35),
-                    // Centered circle with arrow for navigation
+                    
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, '/login');
